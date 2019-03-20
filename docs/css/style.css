@@ -17,7 +17,8 @@ footer {
     margin: 0 auto;
 }
 
-.wrapper {
+.wrapper,
+#contacts {
     max-width: 960px;
     margin: 0 auto;
 }
@@ -198,6 +199,12 @@ footer {
 article:last-child {
     margin-bottom: 50px;
 }**/
+#slider_js {
+    padding-bottom: 1px;
+    background-image: url(../img/slider_back.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
 
 #slider_js h2 {
     color: #333;
