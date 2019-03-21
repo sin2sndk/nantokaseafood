@@ -39,18 +39,18 @@ a {
     /*line-height: 0;*/
     color: #333;
     opacity: 1;
-    transition: 0.5s;
+    transition-duration: 0.5s;
 }
 
 a:hover {
     opacity: 0.3;
-    transition: 0.5s;
+    transition-duration: 0.5s;
 }
 
 a:focus,
 a:active {
     color: #000;
-    transition: 0.1s;
+    transition-duration: 0.5s;
 }
 
 .clearfix::after {
@@ -200,7 +200,7 @@ article:last-child {
     margin-bottom: 50px;
 }**/
 #slider_js {
-    padding-bottom: 1px;
+    padding-bottom: 10px;
     background-image: url(../img/slider_back.png);
     background-position: bottom;
     background-repeat: repeat-x;
@@ -235,14 +235,25 @@ article:last-child {
 
 #category_nav li {
     flex-grow: 1;
+    width: 200px;
+    height: 100px;
+    line-height: 0;
 }
 
 #category_nav li:not(:last-child) {
     padding-right: 50px;
 }
 
-#category_nav li a {
+a.zoom_img {
+    display: block;
+    line-height: 0;
+    overflow: hidden;
     writing-mode: vertical-rl;
+}
+
+a.zoom_img :hover {
+    transform: scale(1.03);
+    transition-duration: 0.5s;
 }
 
 /*商品カテゴリナビ設定終了*/
